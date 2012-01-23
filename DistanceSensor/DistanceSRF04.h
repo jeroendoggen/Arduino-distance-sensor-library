@@ -35,9 +35,9 @@
   #include <pins_arduino.h>
 #endif
 
-#include <AccousticDistanceSensor.h>
+#include <AcousticDistanceSensor.h>
 
-class DistanceSRF04 : public AccousticDistanceSensor
+class DistanceSRF04 : public AcousticDistanceSensor
 {
 	public:
 		DistanceSRF04();
