@@ -41,9 +41,9 @@ class DistanceSensor
 {
 	public:
 		inline virtual void begin(){ /*void*/ };
-		virtual int getDistanceCentimeter()=0;
+		virtual int getDistanceCentimeter()=0; 	// Is implemented in derived classes
 
-		boolean isCloser(int threshold);
-		boolean isFarther(int threshold);
+		boolean isCloser(int threshold);    	// Compare distance value to threshold
+		boolean isFarther(int threshold);  		// Compare distance value to threshold
 };
 #endif

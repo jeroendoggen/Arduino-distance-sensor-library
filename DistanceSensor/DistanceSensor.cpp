@@ -26,7 +26,7 @@
  ***********************************************************************************************************/
 
 /// <summary>
-/// DistanceSensor.cpp - Library for,...
+/// DistanceSensor.cpp - Library for retrieving data from Distance sensors
 /// </summary>
 
 #include <DistanceSensor.h>
@@ -47,7 +47,7 @@ boolean DistanceSensor::isCloser(int threshold)
 }
 
 /// <summary>
-/// isFarther: check whether the distance to the detected object is smaller than a given threshold
+/// isFarther: check whether the distance to the detected object is bigger than a given threshold
 /// </summary>
 boolean DistanceSensor::isFarther(int threshold)
 {
