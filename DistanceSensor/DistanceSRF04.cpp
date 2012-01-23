@@ -36,32 +36,32 @@ DistanceSRF04::DistanceSRF04()
 /// <summary>
 /// Begin function to set default pins
 /// </summary>
-void DistanceSRF04::begin()
-{
-	begin (2,3);
-}
+// void DistanceSRF04::begin()
+// {
+// 	begin (2,3);
+// }
 
 /// <summary>
 /// Begin variables
 /// - int trigPin: pin used to activate the sensor
 /// - int echoPin: pin used to read the reflection
 /// </summary>
-void DistanceSRF04::begin(int echoPin, int trigPin)
-{
-	_trigPin=trigPin;
-	_echoPin=echoPin;
-	pinMode(_trigPin, OUTPUT);
-	pinMode(_echoPin, INPUT);
-	setAveraging(1);		      //1: all samples passed to higher level
-}
+// void DistanceSRF04::begin(int echoPin, int trigPin)
+// {
+// 	_trigPin=trigPin;
+// 	_echoPin=echoPin;
+// 	pinMode(_trigPin, OUTPUT);
+// 	pinMode(_echoPin, INPUT);
+// 	setAveraging(1);		      //1: all samples passed to higher level
+// }
 
 /// <summary>
 /// setAveraging(int avg): Sets how many samples have to be averaged in getDistanceCentimeter, default value is 100.
 /// </summary>
-void DistanceSRF04::setAveraging(int avg)
-{
-	_average=avg;
-}
+// void DistanceSRF04::setAveraging(int avg)
+// {
+// 	_average=avg;
+// }
 
 /// <summary>
 /// getDistanceTime(): Returns the time between transmission and echo receive
@@ -86,16 +86,16 @@ int DistanceSRF04::getDistanceTime()
 /// <summary>
 /// getDistanceCentimeter(): Returns the distance in centimeters
 /// </summary>
-int DistanceSRF04::getDistanceCentimeter()
-{
-	return (getDistanceTime()/29/2);
-}
+// int DistanceSRF04::getDistanceCentimeter()
+// {
+// 	return (getDistanceTime()/29/2);
+// }
 
 /// <summary>
 /// getDistanceInch(): Returns the distance in inches
 /// </summary>
-int DistanceSRF04::getDistanceInch()
-{
-	return (getDistanceTime()/74/2);
-}
+// int DistanceSRF04::getDistanceInch()
+// {
+// 	return (getDistanceTime()/74/2);
+// }
 

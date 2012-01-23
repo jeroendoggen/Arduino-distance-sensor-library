@@ -36,51 +36,49 @@ DistanceGP2Y0A21YK::DistanceGP2Y0A21YK()
 /// <summary>
 /// Begin function to set pins: distancePin = A0.
 /// </summary>
-void
-DistanceGP2Y0A21YK::begin()
-{
-	begin (A0);
-}
+// void DistanceGP2Y0A21YK::begin()
+// {
+// 	begin (A0);
+// }
 
 /// <summary>
 /// Begin variables
 /// - int _distancePin: number indicating the distance to an object: ANALOG IN
 /// When you use begin() without variables standard values are loaded: A0
 /// </summary>
-void
-DistanceGP2Y0A21YK::begin(int distancePin)
-{
-	pinMode(distancePin, INPUT);
-	_distancePin=distancePin;
-	setAveraging(1);		      //1: all samples passed to higher level
-	setARefVoltage(5);		      // 5: default analog reference of 5 volts (on 5V Arduino boards) or 3.3 volts (on 3.3V Arduino boards)
-		//setARefVoltage(3);  // external analog reference: for 3.3V: put a wire between the AREF pin and the 3.3V VCC pin.
-		//This increases accuracy (and uses a different LUT)
-}
+// void DistanceGP2Y0A21YK::begin(int distancePin)
+// {
+// 	pinMode(distancePin, INPUT);
+// 	_distancePin=distancePin;
+// 	setAveraging(1);		      //1: all samples passed to higher level
+// 	setARefVoltage(5);		      // 5: default analog reference of 5 volts (on 5V Arduino boards) or 3.3 volts (on 3.3V Arduino boards)
+// 		//setARefVoltage(3);  // external analog reference: for 3.3V: put a wire between the AREF pin and the 3.3V VCC pin.
+// 		//This increases accuracy (and uses a different LUT)
+// }
 
 /// <summary>
 /// setAveraging(int avg): Sets how many samples have to be averaged in getDistanceCentimeter, default value is 1.
 /// </summary>
-void DistanceGP2Y0A21YK::setAveraging(int avg)
-{
-	_average=avg;
-}
+// void DistanceGP2Y0A21YK::setAveraging(int avg)
+// {
+// 	_average=avg;
+// }
 
 /// <summary>
 /// getDistanceRaw(): Returns the distance as a raw value: ADC output: 0 -> 1023
 /// </summary>
-int DistanceGP2Y0A21YK::getDistanceRaw()
-{
-	return (analogRead(_distancePin));
-}
+// int DistanceGP2Y0A21YK::getDistanceRaw()
+// {
+// 	return (analogRead(_distancePin));
+// }
 
 /// <summary>
 /// getDistanceVolt(): Returns the distance as a Voltage: ADC Input: 0V -> 5V (or 0V -> 3.3V)
 /// </summary>
-int DistanceGP2Y0A21YK::getDistanceVolt()
-{
-	return _mapGP2Y0A21YK_V(getDistanceRaw());
-}
+// int DistanceGP2Y0A21YK::getDistanceVolt()
+// {
+// 	return _mapGP2Y0A21YK_V(getDistanceRaw());
+// }
 
 /// <summary>
 /// getDistanceCentimeter(): Returns the distance in centimeters
@@ -93,17 +91,17 @@ int DistanceGP2Y0A21YK::getDistanceCentimeter()
 /// <summary>
 /// _mapGP2Y0A21YKV: calculates the input voltage of the ADC
 /// </summary>
-int DistanceGP2Y0A21YK::_mapGP2Y0A21YK_V(int value)
-{
-	if (_refVoltage == 3)
-	{
-		return map(value,0,1023,0,3300);
-	}
-	if (_refVoltage == 5)
-	{
-		return map(value,0,1023,0,5000);
-	}
-}
+// int DistanceGP2Y0A21YK::_mapGP2Y0A21YK_V(int value)
+// {
+// 	if (_refVoltage == 3)
+// 	{
+// 		return map(value,0,1023,0,3300);
+// 	}
+// 	if (_refVoltage == 5)
+// 	{
+// 		return map(value,0,1023,0,5000);
+// 	}
+// }
 
 /// <summary>
 /// _mapGP2Y0A21YK_CM: calculates the distance in centimeters using a lookup table
@@ -136,16 +134,16 @@ int DistanceGP2Y0A21YK::_mapGP2Y0A21YK_CM(int value)
 /// <summary>
 /// setARefVoltage:set the ADC reference voltage: (default value: 5V, set to 3 for external reference value, typically 3.3 on Arduino boards)
 /// </summary>
-void DistanceGP2Y0A21YK::setARefVoltage(int refV)
-{
-	_refVoltage=refV;
-	if (_refVoltage == 5)
-	{
-		analogReference(DEFAULT);
-	}
-	if (_refVoltage == 3)
-	{
-		analogReference(EXTERNAL);
-	}
-}
+// void DistanceGP2Y0A21YK::setARefVoltage(int refV)
+// {
+// 	_refVoltage=refV;
+// 	if (_refVoltage == 5)
+// 	{
+// 		analogReference(DEFAULT);
+// 	}
+// 	if (_refVoltage == 3)
+// 	{
+// 		analogReference(EXTERNAL);
+// 	}
+// }
 

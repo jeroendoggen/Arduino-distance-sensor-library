@@ -38,29 +38,29 @@
   #include <pins_arduino.h>
 #endif
 
-#include <DistanceSensor.h>
+#include <AnalogDistanceSensor.h>
 
-class DistanceGP2Y0A21YK : public DistanceSensor
+class DistanceGP2Y0A21YK : public AnalogDistanceSensor
 {
 	public:
 		DistanceGP2Y0A21YK();
-		void begin();
-		void begin(int distancePin);
+		//void begin();
+		//void begin(int distancePin);
 
-		int getDistanceRaw();
-		int getDistanceVolt();
+		//int getDistanceRaw();
+		//int getDistanceVolt();
 		int getDistanceCentimeter();
 
-		void setAveraging(int avg);    
-		void setARefVoltage(int _refV);
+		//void setAveraging(int avg);    
+		//void setARefVoltage(int _refV);
 
 	private:
-		int _mapGP2Y0A21YK_V(int value);
+		//int _mapGP2Y0A21YK_V(int value);
 		int _mapGP2Y0A21YK_CM(int value);
-		int _distancePin;
-		int _average;
+		//int _distancePin;
+		//int _average;
 		int _transferFunctionLUT3V[];
 		int _transferFunctionLUT5V[];
-		int _refVoltage;
+		//int _refVoltage;
 };
 #endif

@@ -35,25 +35,25 @@
   #include <pins_arduino.h>
 #endif
 
-#include <DistanceSensor.h>
+#include <AccousticDistanceSensor.h>
 
-class DistanceSRF04 : public DistanceSensor
+class DistanceSRF04 : public AccousticDistanceSensor
 {
 	public:
 		DistanceSRF04();
-		void begin();
-		void begin(int echoPin, int trigPin);
+		//void begin();
+		//void begin(int echoPin, int trigPin);
 		
 		int getDistanceTime();
-		int getDistanceCentimeter();
-		int getDistanceInch();
+		//int getDistanceCentimeter();
+		//int getDistanceInch();
 
-		void setAveraging(int avg);    
+		//void setAveraging(int avg);    
 
 	private:
-		int _trigPin;
-		int _echoPin;
-		int _average;
+		//int _trigPin;
+		//int _echoPin;
+		//int _average;
 		long _duration;
 };
 #endif
