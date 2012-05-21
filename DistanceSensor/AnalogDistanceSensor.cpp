@@ -93,13 +93,3 @@ void AnalogDistanceSensor::setARefVoltage(int refV)
 		analogReference(EXTERNAL);
 	}
 }
-
-/// <summary>
-/// setAveraging(int avg): Sets how many samples have to be averaged (in getDistanceCentimeter), default value is 1.
-/// TODO: is this needed here?
-/// </summary>
-void AnalogDistanceSensor::setAveraging(int avg)
-{
-	_average=avg;
-}
-

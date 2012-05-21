@@ -45,5 +45,10 @@ class DistanceSensor
 
 		boolean isCloser(int threshold);    	// Compare distance value to threshold
 		boolean isFarther(int threshold);  		// Compare distance value to threshold
+		
+		void setAveraging(int avg); 			// calculate average of multiple samples
+		
+	protected:
+		int _average;
 };
 #endif

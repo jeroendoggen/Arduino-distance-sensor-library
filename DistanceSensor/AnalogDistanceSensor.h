@@ -49,14 +49,12 @@ class AnalogDistanceSensor : public DistanceSensor
 		int getDistanceVolt();
 	
 		void setARefVoltage(int _refV);
-		void setAveraging(int avg); 
 
 	private:
 		int _mapGP2Y0A21YK_V(int value);
 		int _distancePin;
 
 	protected:
-		int _average;
 		int _refVoltage;
 };
 #endif

@@ -48,14 +48,6 @@ void UltrasonicDistanceSensor::begin(int echoPin, int trigPin)
 }
 
 /// <summary>
-/// setAveraging(int avg): Sets how many samples have to be averaged in getDistanceCentimeter, default value is 100.
-/// </summary>
-void UltrasonicDistanceSensor::setAveraging(int avg)
-{
-	_average=avg;
-}
-
-/// <summary>
 /// getDistanceCentimeter(): Returns the distance in centimeters
 /// </summary>
 int UltrasonicDistanceSensor::getDistanceCentimeter()
