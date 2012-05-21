@@ -24,7 +24,6 @@
 /// </summary>
 
 #include <DistanceGP2Y0A21YK.h>
-#include <DistanceGP2Y0A21YK_LUTs.h>
 
 /// <summary>
 /// Constructor
@@ -38,34 +37,16 @@ DistanceGP2Y0A21YK::DistanceGP2Y0A21YK()
 /// </summary>
 int DistanceGP2Y0A21YK::getDistanceCentimeter()
 {
-	return _mapGP2Y0A21YK_CM(getDistanceRaw());
-}
-
-/// <summary>
-/// _mapGP2Y0A21YK_CM: calculates the distance in centimeters using a lookup table
-///    -> Two different LUTs depending on ADC reference voltage
-/// </summary>
-int DistanceGP2Y0A21YK::_mapGP2Y0A21YK_CM(int value)
-{
-	if (_refVoltage == 3)
-	{
-		int sum = 0;
-		for (int i=0;i<_average;i++)
-		{
-			// this code is equivalent to: sum=sum+transferFunctionLUT5V[(getDistanceRaw()/4)];
-			// but this alternative syntax is needed to read the program memory
-			sum=sum + pgm_read_byte_near (transferFunctionLUT3V + (getDistanceRaw()/4));
-		}
-		return(sum/_average);
+	int adcValue=getDistanceRaw();
+	if (adcValue > 600){  // lower boundary: 4 cm (3 cm means under the boundary)
+		return (3);
 	}
-	if (_refVoltage == 5)
-	{
-		int sum = 0;
-		for (int i=0;i<_average;i++)
-		{
-			sum=sum + pgm_read_byte_near (transferFunctionLUT5V + (getDistanceRaw()/4));
-		}
-		return(sum/_average);
+	
+	if (adcValue < 80 ){  //upper boundary: 36 cm (returning 37 means over the boundary)
+		return (37);
+	}
+	
+	else{
+		return (1 / (0.0002391473 * adcValue - 0.0100251467));
 	}
 }
-

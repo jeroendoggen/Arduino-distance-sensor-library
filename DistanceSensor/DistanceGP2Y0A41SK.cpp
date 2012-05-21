@@ -1,10 +1,7 @@
 /************************************************************************************************************
- * DistanceGP2Y0A21YK.h - Arduino library for retrieving data from the analog GP2Y0A21YK IR Distance sensor *
- * Copyright 2011-2012 Jeroen Doggen (jeroendoggen@gmail.com)                                               *
- * Datasheet: http://www.sparkfun.com/datasheets/Components/GP2Y0A21YK.pdf                                  *
- ************************************************************************************************************
- * Version History:                                                                                         *
- *  Version 0.1: First version using "AnalogDistanceSensor" lib                                             *
+ * DistanceGP2Y0A41SK.h - Arduino library for retrieving data from the analog GP2Y IR Distance sensor *
+ * Copyright 2011 Jeroen Doggen (jeroendoggen@gmail.com)                                                    *
+ * For more information: variable declaration, changelog,... see DistanceGP2Y0A41SK.h                       *
  ************************************************************************************************************
  * This library is free software; you can redistribute it and/or                                            *
  * modify it under the terms of the GNU Lesser General Public                                               *
@@ -21,22 +18,36 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA                               *
  ***********************************************************************************************************/
 
-#ifndef DistanceGP2Y0A21YK_h
-#define DistanceGP2Y0A21YK_h
+/// <summary>
+/// DistanceGP2Y0A41SK.cpp - Library for retrieving data from the GP2Y IR Distance sensor.
+/// For more information: variable declaration, changelog,... see DistanceGP2Y0A41SK.h
+/// </summary>
 
-#if defined(ARDUINO) && ARDUINO >= 100
-  #include "Arduino.h"
-#else
-  #include "WProgram.h"
-  #include <pins_arduino.h>
-#endif
+#include <Arduino.h>
+#include <DistanceGP2Y0A41SK.h>
 
-#include <AnalogDistanceSensor.h>
-
-class DistanceGP2Y0A21YK : public AnalogDistanceSensor
+/// <summary>
+/// Constructor
+/// </summary>
+DistanceGP2Y0A41SK::DistanceGP2Y0A41SK()
 {
-	public:
-		DistanceGP2Y0A21YK();
-		int getDistanceCentimeter();
-};
-#endif
+}
+
+/// <summary>
+/// getDistanceCentimeter(): Returns the distance in centimeters: between 4-36cm (3 & 37 are boundary values)
+/// </summary>
+int DistanceGP2Y0A41SK::getDistanceCentimeter()
+{
+	int adcValue=getDistanceRaw();
+	if (adcValue > 600){  // lower boundary: 4 cm (3 cm means under the boundary)
+		return (3);
+	}
+	
+	if (adcValue < 80 ){  //upper boundary: 36 cm (returning 37 means over the boundary)
+		return (37);
+	}
+	
+	else{
+		return (1 / (0.000413153 * adcValue - 0.0055266887));
+	}
+}

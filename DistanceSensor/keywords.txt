@@ -8,6 +8,7 @@
 
 DistanceGP2Y0A21YK	KEYWORD1
 DistanceSRF04	KEYWORD1
+DistanceGP2Y0A41SK	KEYWORD1
 
 ##############################################
 # Methods and Functions (KEYWORD2)
