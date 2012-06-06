@@ -64,7 +64,7 @@ boolean DistanceSensor::isFarther(int threshold)
 /// <summary>
 /// setAveraging(int avg): Sets how many samples have to be averaged in getDistanceCentimeter, default value is 1.
 /// </summary>
-void UltrasonicDistanceSensor::setAveraging(int avg)
+void DistanceSensor::setAveraging(int avg)
 {
 	_average=avg;
 }
