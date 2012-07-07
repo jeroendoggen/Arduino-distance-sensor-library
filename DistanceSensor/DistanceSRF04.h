@@ -29,21 +29,21 @@
 #define DistanceSRF04_h
 
 #if defined(ARDUINO) && ARDUINO >= 100
-  #include "Arduino.h"
+#include "Arduino.h"
 #else
-  #include "WProgram.h"
-  #include <pins_arduino.h>
+#include "WProgram.h"
+#include <pins_arduino.h>
 #endif
 
 #include <UltrasonicDistanceSensor.h>
 
 class DistanceSRF04 : public UltrasonicDistanceSensor
 {
-	public:
-		DistanceSRF04();
-		int getDistanceTime();
+  public:
+    DistanceSRF04();
+    int getDistanceTime();
 
-	private:
-		long _duration;
+  private:
+    long _duration;
 };
 #endif

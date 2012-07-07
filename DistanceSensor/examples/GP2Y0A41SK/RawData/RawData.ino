@@ -13,6 +13,6 @@ void loop()
 {
   distance = Dist.getDistanceRaw();
   Serial.print("\nADC Raw: ");
-  Serial.print(distance);  
-  delay(500); //make it readable
+  Serial.print(distance);
+  delay(500);                                     //make it readable
 }

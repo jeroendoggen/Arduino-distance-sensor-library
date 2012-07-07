@@ -13,6 +13,6 @@ void loop()
 {
   distance = Dist.getDistanceInch();
   Serial.print("\nDistance in inches: ");
-  Serial.print(distance);  
-  delay(500); //make it readable
+  Serial.print(distance);
+  delay(500);                                     //make it readable
 }

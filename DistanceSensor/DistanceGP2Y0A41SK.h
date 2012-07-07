@@ -32,18 +32,18 @@
 #define DistanceGP2Y0A41SK_h
 
 #if defined(ARDUINO) && ARDUINO >= 100
-  #include "Arduino.h"
+#include "Arduino.h"
 #else
-  #include "WProgram.h"
-  #include <pins_arduino.h>
+#include "WProgram.h"
+#include <pins_arduino.h>
 #endif
 
 #include <AnalogDistanceSensor.h>
 
 class DistanceGP2Y0A41SK : public AnalogDistanceSensor
 {
-	public:
-		DistanceGP2Y0A41SK();
-		int getDistanceCentimeter();
+  public:
+    DistanceGP2Y0A41SK();
+    int getDistanceCentimeter();
 };
 #endif

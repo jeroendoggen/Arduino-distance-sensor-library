@@ -38,18 +38,17 @@ DistanceSRF04::DistanceSRF04()
 /// </summary>
 int DistanceSRF04::getDistanceTime()
 {
-	long sum = 0;
-	
-	for (int i=0;i<_average;i++)
-	{
-		digitalWrite(_trigPin, LOW);
-		delayMicroseconds(2);
-		digitalWrite(_trigPin, HIGH);
-		delayMicroseconds(10);
-		digitalWrite(_trigPin, LOW);
-		_duration = pulseIn(_echoPin, HIGH);
-		sum=sum+_duration;
-	}
-	return(int(sum/_average));
-}
+  long sum = 0;
 
+  for (int i=0;i<_average;i++)
+  {
+    digitalWrite(_trigPin, LOW);
+    delayMicroseconds(2);
+    digitalWrite(_trigPin, HIGH);
+    delayMicroseconds(10);
+    digitalWrite(_trigPin, LOW);
+    _duration = pulseIn(_echoPin, HIGH);
+    sum=sum+_duration;
+  }
+  return(int(sum/_average));
+}
