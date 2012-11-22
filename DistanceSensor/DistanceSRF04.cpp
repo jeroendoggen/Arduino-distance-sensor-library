@@ -31,6 +31,7 @@
 /// </summary>
 DistanceSRF04::DistanceSRF04()
 {
+  _duration=0;
 }
 
 /// <summary>

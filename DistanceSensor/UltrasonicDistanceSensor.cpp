@@ -39,5 +39,11 @@ void UltrasonicDistanceSensor::begin(int echoPin, int trigPin)
 /// getDistanceCentimeter(): Returns the distance in centimeters
 int UltrasonicDistanceSensor::getDistanceCentimeter()
 {
-  return (getDistanceTime()/29/2);
+  return (getDistanceTime()/58);
+}
+
+/// getDistanceInch(): Returns the distance in inches
+int UltrasonicDistanceSensor::getDistanceInch()
+{
+  return (getDistanceTime()/148);
 }

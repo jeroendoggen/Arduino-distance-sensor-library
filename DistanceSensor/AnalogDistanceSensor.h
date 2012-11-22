@@ -41,6 +41,7 @@
 class AnalogDistanceSensor : public DistanceSensor
 {
   public:
+    AnalogDistanceSensor();
     void begin();
     void begin(int distancePin);
 

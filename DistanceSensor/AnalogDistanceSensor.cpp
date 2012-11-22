@@ -18,6 +18,13 @@
 
 #include <AnalogDistanceSensor.h>
 
+/// Constructor
+AnalogDistanceSensor::AnalogDistanceSensor()
+{
+  _distancePin=0;
+  _refVoltage=0;
+}
+
 /// Begin function to set input pins: distancePin = A0.
 void AnalogDistanceSensor::begin()
 {
@@ -59,6 +66,10 @@ int AnalogDistanceSensor::_mapGP2Y0A21YK_V(int value)
   if (_refVoltage == 5)
   {
     return map(value,0,1023,0,5000);
+  }
+  else
+  {
+    return (0);
   }
 }
 

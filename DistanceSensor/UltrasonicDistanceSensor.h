@@ -44,6 +44,7 @@ class UltrasonicDistanceSensor : public DistanceSensor
     void begin(int echoPin, int trigPin);
 
     int getDistanceCentimeter();
+    int getDistanceInch();
 
   protected:
     int _trigPin;
