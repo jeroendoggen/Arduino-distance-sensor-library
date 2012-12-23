@@ -22,6 +22,21 @@
 // License along with this library; if not, write to the Free Software
 // Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
+/*! \mainpage Arduino library for distance sensors
+ *
+ * \section intro_sec Introduction
+ *
+ * The current version provides a unified interface for the following sensors:
+ *
+ * <OL>
+ * <LI> SRF04 & SRF05 Ultrasonic Ranger
+ * 
+ * <LI> Sharp GP2Y0A21YK IR Distance sensors
+ * 
+ * <LI> Sharp GP2Y0A41SK IR Distance sensors
+ * </OL>
+ */ 
+
 #ifndef DistanceSensor_h
 #define DistanceSensor_h
 

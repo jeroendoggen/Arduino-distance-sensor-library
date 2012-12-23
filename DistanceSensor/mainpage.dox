@@ -1,0 +1,14 @@
+/*! \mainpage Arduino library for distance sensors
+ *
+ * \section intro_sec Introduction
+ *
+ * The current version provides a unified interface for the following sensors:
+ *
+ * <OL>
+ * <LI> SRF04 & SRF05 Ultrasonic Ranger
+ * 
+ * <LI> Sharp GP2Y0A21YK IR Distance sensors
+ * 
+ * <LI> Sharp GP2Y0A41SK IR Distance sensors
+ * </OL>
+ */ 

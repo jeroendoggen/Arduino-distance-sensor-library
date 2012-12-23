@@ -1,6 +1,7 @@
 var NAVTREE =
 [
   [ "ArduinoDistanceSensorLibrary", "index.html", [
+    [ "Arduino library for distance sensors", "index.html", null ],
     [ "Classes", null, [
       [ "Class List", "annotated.html", "annotated" ],
       [ "Class Index", "classes.html", null ],
