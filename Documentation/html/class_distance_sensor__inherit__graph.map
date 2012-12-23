@@ -1,0 +1,7 @@
+<map id="DistanceSensor" name="DistanceSensor">
+<area shape="rect" id="node3" href="$class_analog_distance_sensor.html" title="{AnalogDistanceSensor\n|# _refVoltage\l|+ AnalogDistanceSensor()\l+ begin()\l+ begin()\l+ getDistanceRaw()\l+ getDistanceVolt()\l+ setARefVoltage()\l}" alt="" coords="199,174,372,346"/>
+<area shape="rect" id="node9" href="$class_ultrasonic_distance_sensor.html" title="{UltrasonicDistanceSensor\n|# _trigPin\l# _echoPin\l|+ getDistanceTime()\l+ begin()\l+ begin()\l+ getDistanceCentimeter()\l+ getDistanceInch()\l}" alt="" coords="396,174,572,346"/>
+<area shape="rect" id="node5" href="$class_distance_g_p2_y0_a21_y_k.html" title="{DistanceGP2Y0A21YK\n||+ DistanceGP2Y0A21YK()\l+ getDistanceCentimeter()\l}" alt="" coords="5,395,181,498"/>
+<area shape="rect" id="node7" href="$class_distance_g_p2_y0_a41_s_k.html" title="{DistanceGP2Y0A41SK\n||+ DistanceGP2Y0A41SK()\l+ getDistanceCentimeter()\l}" alt="" coords="205,395,381,498"/>
+<area shape="rect" id="node11" href="$class_distance_s_r_f04.html" title="{DistanceSRF04\n||+ DistanceSRF04()\l+ getDistanceTime()\l}" alt="" coords="413,395,555,498"/>
+</map>

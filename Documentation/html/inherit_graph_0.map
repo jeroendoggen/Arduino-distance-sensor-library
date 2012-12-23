@@ -1,0 +1,8 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_distance_sensor.html" title="DistanceSensor" alt="" coords="5,85,120,115"/>
+<area shape="rect" id="node3" href="$class_analog_distance_sensor.html" title="AnalogDistanceSensor" alt="" coords="179,59,333,88"/>
+<area shape="rect" id="node9" href="$class_ultrasonic_distance_sensor.html" title="UltrasonicDistanceSensor" alt="" coords="169,112,343,141"/>
+<area shape="rect" id="node5" href="$class_distance_g_p2_y0_a21_y_k.html" title="DistanceGP2Y0A21YK" alt="" coords="392,5,549,35"/>
+<area shape="rect" id="node7" href="$class_distance_g_p2_y0_a41_s_k.html" title="DistanceGP2Y0A41SK" alt="" coords="392,59,549,88"/>
+<area shape="rect" id="node11" href="$class_distance_s_r_f04.html" title="DistanceSRF04" alt="" coords="413,112,528,141"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="DistanceGP2Y0A41SK" name="DistanceGP2Y0A41SK">
+<area shape="rect" id="node2" href="$class_analog_distance_sensor.html" title="{AnalogDistanceSensor\n|# _refVoltage\l|+ AnalogDistanceSensor()\l+ begin()\l+ begin()\l+ getDistanceRaw()\l+ getDistanceVolt()\l+ setARefVoltage()\l}" alt="" coords="7,174,180,346"/>
+<area shape="rect" id="node4" href="$class_distance_sensor.html" title="{DistanceSensor\n|# _average\l|+ isCloser()\l+ isFarther()\l+ setAveraging()\l}" alt="" coords="35,5,152,125"/>
+</map>

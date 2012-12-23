@@ -1,0 +1,4 @@
+<map id="DistanceSRF04" name="DistanceSRF04">
+<area shape="rect" id="node2" href="$class_ultrasonic_distance_sensor.html" title="{UltrasonicDistanceSensor\n|# _trigPin\l# _echoPin\l|+ getDistanceTime()\l+ begin()\l+ begin()\l+ getDistanceCentimeter()\l+ getDistanceInch()\l}" alt="" coords="5,174,181,346"/>
+<area shape="rect" id="node4" href="$class_distance_sensor.html" title="{DistanceSensor\n|# _average\l|+ isCloser()\l+ isFarther()\l+ setAveraging()\l}" alt="" coords="35,5,152,125"/>
+</map>

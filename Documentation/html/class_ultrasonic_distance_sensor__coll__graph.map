@@ -1,0 +1,3 @@
+<map id="UltrasonicDistanceSensor" name="UltrasonicDistanceSensor">
+<area shape="rect" id="node2" href="$class_distance_sensor.html" title="{DistanceSensor\n|# _average\l|+ isCloser()\l+ isFarther()\l+ setAveraging()\l}" alt="" coords="35,5,152,125"/>
+</map>
