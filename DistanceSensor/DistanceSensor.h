@@ -2,11 +2,11 @@
 // Copyright 2011 Jeroen Doggen (jeroendoggen@gmail.com)
 // More info: http://www.robot-electronics.co.uk/files/SRF04.pde
 //
-// Version History: 
+// Version History:
 //  Version 0.1:
 //
 // Roadmap:
-//  Version 0.2: ?? 
+//  Version 0.2: ??
 //
 // This library is free software; you can redistribute it and/or
 // modify it under the terms of the GNU Lesser General Public

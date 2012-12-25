@@ -29,7 +29,7 @@
 #include <pins_arduino.h>
 #endif
 
-#include <AnalogDistanceSensor.h>
+#include "AnalogDistanceSensor.h"
 
 class DistanceGP2Y0A21YK : public AnalogDistanceSensor
 {

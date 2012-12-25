@@ -33,7 +33,7 @@
 
 #define __cxa_pure_virtual()
 
-#include <DistanceSensor.h>
+#include "DistanceSensor.h"
 
 class UltrasonicDistanceSensor : public DistanceSensor
 {

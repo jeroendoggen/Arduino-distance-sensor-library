@@ -35,7 +35,7 @@
 
 #define __cxa_pure_virtual()
 
-#include <DistanceSensor.h>
+#include "DistanceSensor.h"
 
 //abstract class AnalogDistanceSensor
 class AnalogDistanceSensor : public DistanceSensor

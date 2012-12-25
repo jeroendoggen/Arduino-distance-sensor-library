@@ -35,7 +35,7 @@
 #include <pins_arduino.h>
 #endif
 
-#include <UltrasonicDistanceSensor.h>
+#include "UltrasonicDistanceSensor.h"
 
 class DistanceSRF04 : public UltrasonicDistanceSensor
 {

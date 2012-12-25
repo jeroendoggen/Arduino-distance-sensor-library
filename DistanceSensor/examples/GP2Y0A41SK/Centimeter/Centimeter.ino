@@ -13,6 +13,6 @@ void loop()
 {
   distance = Dist.getDistanceCentimeter();
   Serial.print("Distance in centimeters: ");
-  Serial.println(distance);  
-  delay(500); //make it readable
+  Serial.println(distance);
+  delay(500);                                     //make it readable
 }

@@ -32,6 +32,7 @@
 DistanceSRF04::DistanceSRF04()
 {
   _duration=0;
+  _average=0;
 }
 
 /// <summary>
@@ -40,7 +41,6 @@ DistanceSRF04::DistanceSRF04()
 int DistanceSRF04::getDistanceTime()
 {
   long sum = 0;
-
   for (int i=0;i<_average;i++)
   {
     digitalWrite(_trigPin, LOW);
@@ -48,7 +48,7 @@ int DistanceSRF04::getDistanceTime()
     digitalWrite(_trigPin, HIGH);
     delayMicroseconds(10);
     digitalWrite(_trigPin, LOW);
-    _duration = pulseIn(_echoPin, HIGH);
+    _duration = pulseIn(_echoPin, HIGH,17400);
     sum=sum+_duration;
   }
   return(int(sum/_average));
