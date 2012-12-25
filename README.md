@@ -12,4 +12,6 @@ The current version provides a unified interface for four sensors:
 
 Code for the individual sensors in also maintained in separate Google code projects. (http://code.google.com/u/104098523773938750140/)
 
-Source and Doxygen documentation available through Mercurial.
+Folders:
+ * DistanceSensor: source for the Arduino library
+ * Documentation: generated with Doxygen (html, Latex)
