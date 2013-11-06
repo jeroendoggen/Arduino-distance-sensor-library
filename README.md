@@ -25,6 +25,16 @@ Folders:
 --------
  * DistanceSensor: source for the Arduino library
  * Documentation: generated with Doxygen (html, Latex)
+
+Datasheets:
+-----------
+Analog IR Distance sensors:
+ *  [Sharp gp2y0a21yk](https://github.com/jeroendoggen/arduino-distance-sensor-library/raw/master/Documentation/datasheets/Distance_IR_Analog_Sharp_gp2y0a21yk_new.pdf)
+ *  [Sharp gp2y0a41sk0f](https://github.com/jeroendoggen/arduino-distance-sensor-library/raw/master/Documentation/datasheets/Distance_IR_Analog_Sharp_gp2y0a41sk0f.pdf)
+
+Ultrasonic sensors:
+ *  [SRF-04](https://github.com/jeroendoggen/arduino-distance-sensor-library/raw/master/Documentation/datasheets/Distance_Ultrasonic_srf04.pdf)
+
   
 Class diagram:
 --------------
