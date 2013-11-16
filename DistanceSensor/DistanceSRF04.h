@@ -1,5 +1,5 @@
 // Arduino library for distance sensors
-// Copyright 2011-2013 Jeroen Doggen (jeroendoggen@gmail.com
+// Copyright 2011-2013 Jeroen Doggen (jeroendoggen@gmail.com)
 
 #ifndef DistanceSRF04_h
 #define DistanceSRF04_h

@@ -1,5 +1,6 @@
 // Arduino library for distance sensors
-// Copyright 2011-2013 Jeroen Doggen (jeroendoggen@gmail.com
+// Copyright 2011-2013 Jeroen Doggen (jeroendoggen@gmail.com)
+
 #ifndef AnalogDistanceSensor_h
 #define AnalogDistanceSensor_h
 
