@@ -7,7 +7,7 @@ The current version provides a unified interface for four sensors:
  * Sharp GP2Y0A21YK IR Distance sensor
  * Sharp GP2Y0A41SK IR Distance sensor
 
-Code for the individual sensors in also maintained in separate Google code projects. (http://code.google.com/u/104098523773938750140/)
+Code for the individual sensors in also maintained in separate Google code projects. (will be moved to Github soon) (http://code.google.com/u/104098523773938750140/)
 
 Other Sharp distance sensors:
 -----------------------------
