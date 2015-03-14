@@ -24,7 +24,6 @@ class AnalogDistanceSensor : public DistanceSensor
     void begin(int distancePin);
 
     int getDistanceRaw();
-    int getDistanceVolt();
 
     void setARefVoltage(int _refV);
 
