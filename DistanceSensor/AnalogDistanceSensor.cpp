@@ -1,5 +1,5 @@
 // Arduino library for distance sensors
-// Copyright 2011-2013 Jeroen Doggen (jeroendoggen@gmail.com)
+// Copyright 2011-2015 Jeroen Doggen (jeroendoggen@gmail.com)
 
 #include <AnalogDistanceSensor.h>
 
@@ -33,12 +33,6 @@ void AnalogDistanceSensor::begin(int distancePin)
 int AnalogDistanceSensor::getDistanceRaw()
 {
   return (analogRead(_distancePin));
-}
-
-/// getDistanceVolt(): Returns the distance as a Voltage: ADC Input: 0V -> 5V (or 0V -> 3.3V)
-int AnalogDistanceSensor::getDistanceVolt()
-{
-  return _mapGP2Y0A21YK_V(getDistanceRaw());
 }
 
 /// _mapGP2Y0A21YKV: maps the ADC output to the input voltage of the ADC
