@@ -1,8 +1,10 @@
 // Arduino library for distance sensors
 // Copyright 2011-2015 Jeroen Doggen (jeroendoggen@gmail.com)
 
-#ifndef MultiDistanceSensors_h
-#define MultiDistanceSensors_h
+// TODO: warning the code compiles and should work correctly (but untested on hardware)
+
+#ifndef CombinedDistanceSensors_h
+#define CombinedDistanceSensors_h
 
 #if defined(ARDUINO) && ARDUINO >= 100
 #include "Arduino.h"
@@ -15,11 +17,11 @@
 #include <DistanceGP2Y0A21YK.h>
 
 
-//Class ultiDistanceSensors
-class MultiDistanceSensors
+//Class CombinedDistanceSensors
+class CombinedDistanceSensors
 {
   public:
-    MultiDistanceSensors();
+    CombinedDistanceSensors();
 
     void begin();
     void begin(int distancePin1, int distancePin2, int distancePin3, int distancePin4);
@@ -33,9 +35,10 @@ class MultiDistanceSensors
     DistanceGP2Y0A21YK _DistYK_1;
     DistanceGP2Y0A21YK _DistYK_2;
 
-    _distance1;
-    _distance2;
-    _distance3;
-    _distance4;
+    int _distance;
+    int _distance1;
+    int _distance2;
+    int _distance3;
+    int _distance4;
 };
 #endif

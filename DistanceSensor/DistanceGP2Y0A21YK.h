@@ -1,5 +1,5 @@
 // Arduino library for distance sensors
-// Copyright 2011-2013 Jeroen Doggen (jeroendoggen@gmail.com)
+// Copyright 2011-2015 Jeroen Doggen (jeroendoggen@gmail.com)
 
 #ifndef DistanceGP2Y0A21YK_h
 #define DistanceGP2Y0A21YK_h
